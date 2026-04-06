@@ -2,7 +2,7 @@
 
 **The official prompt repository for *Superlawyers: How Claude Makes You the Best Lawyer in the Room* by Daniel Reeves.**
 
-Published by [QuantumInk](https://quantumink.com) · [Register for free updates](https://quantumink.com/superlawyers)
+Published by [QuantumInk](https://quantumink.netlify.app) · [Register for free updates](https://quantumink.netlify.app/superlawyers)
 
 ---
 
@@ -68,7 +68,7 @@ More practice areas coming. See `contributed/` to add yours.
 
 To receive notifications when the library is updated, star this repository.
 
-To receive the updated edition of the book free of charge and to be notified when *Superlawyers: Advanced* launches, [register here](https://quantumink.com/superlawyers) with your Amazon order number.
+To receive the updated edition of the book free of charge and to be notified when *Superlawyers: Advanced* launches, [register here](https://quantumink.netlify.app/superlawyers) with your Amazon order number.
 
 ---
 
