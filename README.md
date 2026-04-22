@@ -97,4 +97,4 @@ Superlawyers · Superlawyers: Advanced *(Coming 2026)*
 **The Hack Collection**
 Hack the Cinema · Hack the Cinema: The Classics · Hack the Cinema: The Series · Hack the Modern Thinking · Hack the Architecture · Hack the Music
 
-[quantumink.com](https://quantumink.com)
+[quantumink.com](https://quantum-ink.com)
