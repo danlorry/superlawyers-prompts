@@ -1,16 +1,67 @@
 # Superlawyers — Prompt Library
 
-**The official prompt repository for *Superlawyers: How Claude Makes You the Best Lawyer in the Room* by Daniel Reeves.**
+**65 production-tested Claude prompts for real legal work, across 12 practice areas.**
 
-Published by [QuantumInk](https://quantumink.netlify.app) · [Register for free updates](https://quantumink.netlify.app/superlawyers)
+The official prompt repository for *Superlawyers: How Claude Makes You the Best Lawyer in the Room* by **Nathan Cord**.
+
+Published by [QuantumInk](https://quantum-ink.com) · [Register for free updates](https://quantum-ink.com/superlawyers)
+
+---
+
+## Why this library exists
+
+Last month, an associate at a mid-size firm reviewed a 210-page M&A contract in four hours instead of the standard two to three days — and flagged three liability gaps the senior partner later confirmed were real. She didn't skip clauses. She used a structured Claude prompt from this library.
+
+Every prompt here is designed for that pattern: Claude multiplies your judgment, never replaces it. The prompts are ready to paste into Claude. The book explains why they are structured the way they are.
 
 ---
 
 ## How to use this repository
 
-Every prompt is ready to copy and paste directly into Claude. The CONTEXT-TASK-FORMAT-CONSTRAINTS structure appears throughout. Never skip any of the four sections.
+Every prompt follows the **CONTEXT → TASK → FORMAT → CONSTRAINTS** structure. Never skip a section — each one changes the output materially.
 
-Before using any prompt, read the relevant chapter. The prompts work best when you understand why they are structured the way they are — what each section does, what to verify, and where Claude's output requires your professional judgment.
+Before running any prompt, read the relevant chapter. The structure matters more than the wording: change a fact in CONTEXT and the whole output changes correctly.
+
+---
+
+## Preview — one prompt to judge the rest
+
+This is *The Landscape Map* from `chapter-03-research/`. Use it when you need to orient yourself in an unfamiliar area of law before opening Westlaw or LexisNexis.
+
+```
+CONTEXT: I am a [plaintiff's/defendant's] attorney in [STATE] representing
+[brief client description] in a [type of matter] case. [Key facts of the
+matter in 2-3 sentences.]
+
+TASK: Give me a research orientation — not cases, but a structured
+overview of:
+
+1. THE DOCTRINAL LANDSCAPE: What legal theories have [plaintiffs/parties]
+   used in [type of matter] cases? What have [defendants/opposing parties]
+   argued?
+
+2. THE CONTESTED ISSUES: What factual and legal questions tend to
+   determine outcomes in [type of matter] cases? What distinctions
+   tend to be dispositive?
+
+3. WHERE THE LAW IS: Which jurisdictions have the most developed case
+   law on [legal issue]? Is there federal preemption to consider?
+   What regulatory bodies are relevant?
+
+4. THE RESEARCH AGENDA: Given my fact pattern, where should I focus
+   my primary source research? What types of cases am I looking for?
+
+FORMAT: Organized by the four topics above. Each section 3-5 paragraphs.
+No case citations — I will find cases in primary sources.
+
+CONSTRAINTS: Flag any area where you are uncertain about the current
+state of the law or where your knowledge may be outdated. Flag any area
+where recent developments may have changed the analysis.
+```
+
+**Verify:** any specific case names Claude mentions despite instructions not to.
+
+64 more prompts in the folders below.
 
 ---
 
@@ -19,7 +70,7 @@ Before using any prompt, read the relevant chapter. The prompts work best when y
 ```
 superlawyers-prompts/
 │
-│── BOOK WORKFLOWS (from the book chapters)
+├── BOOK WORKFLOWS (from the book chapters)
 ├── chapter-03-research/
 ├── chapter-04-drafting/
 ├── chapter-05-analysis/
@@ -28,7 +79,7 @@ superlawyers-prompts/
 ├── chapter-08-automation/
 ├── chapter-09-cross-border/
 │
-│── PRACTICE AREA PROMPTS (beyond the book)
+├── PRACTICE AREA PROMPTS (beyond the book)
 ├── practice-employment/
 ├── practice-real-estate/
 ├── practice-startups-venture/
@@ -68,7 +119,7 @@ More practice areas coming. See `contributed/` to add yours.
 
 To receive notifications when the library is updated, star this repository.
 
-To receive the updated edition of the book free of charge and to be notified when *Superlawyers: Advanced* launches, [register here](https://quantumink.netlify.app/superlawyers) with your Amazon order number.
+To receive the updated edition of the book free of charge and to be notified when *Superlawyers: Advanced* launches, [register here](https://quantum-ink.com/superlawyers) with your Amazon order number.
 
 ---
 
@@ -85,7 +136,9 @@ Prompts that generate unverified legal citations or omit verification steps will
 
 ## License
 
-Free to use in your legal practice. May not be reproduced in books, courses, or commercial products without written permission from QuantumInk.
+This library is licensed under [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
+
+**In practice:** Free to use in your legal practice, adapt for your matters, and share with colleagues (with attribution). Not permitted to reproduce in books, courses, training programs, or other commercial products without written permission from QuantumInk.
 
 ---
 
